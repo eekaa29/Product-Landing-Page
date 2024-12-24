@@ -1,0 +1,211 @@
+:root {
+  --white: #fff;
+  --text-color: black;
+  --title-color: black;
+  --fondo: hsl(32, 37%, 92%);
+  --green-border: hsl(158, 36%, 37%);
+}
+
+* {margin: 0;
+color: var(--text-color);
+font-family: montserrat;}
+
+#header-img {width: 60px;
+object-fit: contain;
+}
+
+#nav-bar {display: flex;
+flex-direction: column;
+justify-content: space-around;
+align-items: center;
+position: fixed;
+width: 100%;
+top: 0;
+background-color: var(--white);
+padding: 10px; 
+}
+
+.nav-links {display: flex;
+list-style: none;}
+
+.nav-links a {text-decoration: none;
+color: var(--text-color);
+padding: 0 10px;}
+
+.nav-links a:hover {
+  font-weight: bold;
+} 
+
+.logo-container {display: flex;
+align-items: center;}
+
+.logo-title {font-size: 25px;
+margin-left: 10px;
+font-weight: 700;
+font-family: montserrat;
+}
+
+
+body {background-color: var(--fondo)}
+
+#email-section{
+  margin-top: 100px;
+}
+
+section::before {
+  display: block;
+  content: " ";
+  margin-top: -100px;
+  height: 100px;
+  visibility: hidden; 
+  pointer-events: none;
+}
+
+
+section {
+  margin: 40px 20px;
+  text-align: center;
+}
+
+h2 {
+  font-family: "fraunces";
+}
+
+.icon {
+  color: var(--green-border);
+  margin-right: 30px;
+}
+
+
+#Features {
+  text-align: left;
+  max-width: 800px;
+  margin: auto;
+  
+}
+
+
+
+.features {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 20px;
+  font-family: montserrat;
+  
+}
+
+#video{
+  width: 100%;
+}
+
+
+#Pricing {
+  display: flex;
+  justify-content: space-between;
+}
+
+.price {
+  padding: 25px;
+  border: 3px solid var(--green-border);
+  border-radius: 5px;
+  padding-top: 0px;
+  padding-bottom: 15px;
+}
+
+
+
+.title h3 {
+  padding: 10px;
+}
+
+.description p {
+  padding: 5px;
+}
+
+
+#t1 {
+  background-color: var(--white);
+
+
+  
+}
+
+#select-button{
+    border: 0;
+    background-color: #f1c40f;
+    font-weight: 400;
+    margin-top: 25px;
+    cursor: pointer;
+}
+
+.select-1 {
+  position: relative;
+  top: 60px;
+}
+
+.select-2 {
+  position: relative;
+  top: 30px;
+}
+
+h3, h1 {color: var(--title-color);}
+
+
+#form {
+  padding: 5px;
+  width: 60vw;
+  max-width: 500px;
+  min-width: 300px;
+  margin: 0 auto;
+  padding-bottom: 2em;
+  border-bottom: 3px solid #d9b650;
+}
+
+.form-title {
+  margin-top: 15px;
+}
+input {
+  padding: 8px;
+  border-radius: 5px; 
+  border: 2px solid var(--green-border)
+
+}
+
+#submit {
+  background-color: var(--green-border);
+  cursor: pointer;
+  color: var(--white)
+}
+
+
+#newsletter {width: unset;
+  margin: 10px 0.5em 12px 0px;
+  vertical-align: middle;
+}
+
+@media only screen and (min-width: 600px) {
+  #nav-bar {
+    flex-direction: row;
+  }
+}
+
+@media only screen and (width >= 100px) {
+  video {
+    width: 70%;
+  }
+}
+
+footer {text-align: center;
+margin-bottom: 50px;
+}
+
+footer a {
+  text-decoration: none;
+  cursor: pointer;
+  color: var(--green-border);
+}
+
+footer a:hover {
+  font-weight: bold;
+}
